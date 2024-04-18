@@ -84,12 +84,12 @@ else:
     print("No se ha podido iniciar sesión")
 
 
-# Condicionales y FOR en un Array
+# Condicionales y FOR en un Array (List)
 idiomas = ["Español", "Chino", "Inglés", "Frances", "Italiano", "Mandarin"]
 
 
 for idioma in idiomas:
-    if idioma == "Chino":
+    if idioma == "Chino" or idioma == "Mandarin":
         print(f"Idioma {idioma} disponible")
     else:
         print(f"Idioma {idioma} no disponible")
