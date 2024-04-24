@@ -75,7 +75,6 @@ usuario_admin = False
 # OR:   una condicion es suficiente para que cumpla
 # AND:  para que dos o más condiciones se cumplan
 
-
 if usuario_log and usuario_admin:
     print("Inicio de sesión exitoso")
 elif usuario_log:
@@ -83,10 +82,8 @@ elif usuario_log:
 else:
     print("No se ha podido iniciar sesión")
 
-
 # Condicionales y FOR en un Array (List)
 idiomas = ["Español", "Chino", "Inglés", "Frances", "Italiano", "Mandarin"]
-
 
 for idioma in idiomas:
     if idioma == "Chino" or idioma == "Mandarin":
