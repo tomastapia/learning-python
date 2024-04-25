@@ -16,8 +16,8 @@ def app():
 
 def agregar_canciones():
     #Bandera para agregar canciones
-    agregar_canciones = True
-    while agregar_canciones:
+    agregar_cancion = True
+    while agregar_cancion:
         #Preguntar que cancion desea agregar
         nombre_playlist = playlist["nombre"]
         pregunta = f"\r\nAgrega canciones a la playlist {nombre_playlist} \r\n"
@@ -25,12 +25,13 @@ def agregar_canciones():
         cancion = input(pregunta)
         if cancion == "cerrar":
             #Para dejar de agregar canciones
-            agregar_canciones = False
+            agregar_cancion = False
             #Mostrar resumen de la playlist
             mostrar_resumen()
         else:
             #Agregar las canciones al playlist
-            playlist["canciones"].append(cancion)
+            playlist["canciones"].append(cancion) #.append agrega elementos a la lista
+            print(playlist)
 
 def mostrar_resumen():
     nombre_playlist = playlist["nombre"]
